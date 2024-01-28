@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#"><img src="./assets/images/logo.svg" alt="logo"></a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">New</a></li>
+        <li class="hideOnMobile"><a href="#">Popular</a></li>
+        <li class="hideOnMobile"><a href="#">Trending</a></li>
+        <li class="hideOnMobile"><a href="#">Categories</a></li>
+        <li class="menu-button" onclick="openSidebar()"><a href="#"><svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg></a></li>
+      </ul>
+    </nav>
+
+    <nav class="sidebar">
+      <ul>
+        <li onclick="closeSidebar()"><a href="#"><svg id="close-button" width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path  d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <article class="top-article left">
+      <section class="img-section"></section>
+      
+      <section class="title-section">
+          <h1>The Bright Future of Web 3.0?</h1>
+      </section>
+      <section class="description-section">
+        <div>
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        </div>
+        <div>
+          <button>READ MORE</button>
+        </div>
+      </section>
+    </article>
+    
+    <aside class="right">
+      <h1>New</h1>
+      
+      <section>
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </section>
+
+      <hr>
+
+      <section>
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </section>
+
+      <hr>
+
+      <section>
+        <h3>Is VC funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </section>
+
+    </aside>
+  </main>
+
+  <section class="article-footer">
+    <article>
+      <div class="img-container">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="">
+      </div>
+      <div class="article-info">
+        <h1>01</h1>
+        <p class="title">Reviving Retro PCs</p>
+        <p class="article-description">What happen when old PCs are given modern upgrades?</p>
+      </div>
+    </article>
+
+    <article>
+      <div class="img-container">
+        <img src="./assets/images/image-top-laptops.jpg" alt="">
+      </div>
+      <div class="article-info">
+        <h1>02</h1>
+        <p class="title">Top 10 Laptops of 2022</p>
+        <p class="article-description">Our best picks for various needs and budgets.</p>
+      </div>
+    </article>
+
+    <article>
+      <div class="img-container">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="">
+      </div>
+      <div class="article-info">
+        <h1>03</h1>
+        <p class="title">The Growth of Gaming</p>
+        <p class="article-description">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <p>Challenge by <a href="https://www.frontendmentor.io/home">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/KurtSotto">Kurt Cagulang</a>.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
